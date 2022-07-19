@@ -32,6 +32,6 @@ internal class CalculationShould {
 
         val result = calculate(null, null)
 
-        assertEquals(1, result)
+        assertEquals(0, result)
     }
 }
