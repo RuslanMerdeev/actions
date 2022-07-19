@@ -1,3 +1,12 @@
+package actions
+
+import calculate
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
+
+@SpringBootApplication
+class ActionsApplication
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
@@ -6,4 +15,6 @@ fun main(args: Array<String>) {
     println("Program arguments: ${args.joinToString()}")
 
     println("Calculation for 3 and 4 is ${calculate(3, 4)}")
+
+	runApplication<ActionsApplication>(*args)
 }
